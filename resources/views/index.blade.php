@@ -83,6 +83,8 @@
                 </div>
             </div>
 
+
+            {{-- foryou --}}
             <div class="foryou">
                 <div class="row">
                     <div class="title">For you</div>
@@ -136,8 +138,9 @@
 
                 </div>
             </div>
-
         </div>
+
+        {{-- contact --}}
         <div class="contact ">
             <div class="contact-body row d-flex justify-content-center ">
                 <div class="col-md-5 info">
