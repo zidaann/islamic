@@ -20,9 +20,9 @@
 </head>
 <body>
 
-    <div class="cover bg-white pb-5">
+    <x-cover>
         <x-navbar></x-navbar>
-        <div class="container px-4">
+        <div class="container px-4 ">
 
             {{-- hero --}}
             <div class="hero mt-2">
@@ -92,7 +92,7 @@
                 <div class="row d-flex justify-content-center">
                     <div class=" col-md-10 foryou-body">
                         <div class="col-md-2 mx-4 foryou-detail">
-                            <a href="#">
+                            <a href="{{ route('quran.index') }}">
                                 <div class="card" >
                                     <div class="card-body">
                                         <img src="/img/quran.png" width="50" class="img-fluid">
@@ -182,7 +182,7 @@
             </div>
             
         </div>
-    </div>
+    </x-cover>
 
 
 

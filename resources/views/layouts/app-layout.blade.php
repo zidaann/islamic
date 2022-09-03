@@ -4,58 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>{{ $title ?? config('app.name') }}</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     @vite('resources/css/app.css')
-    <style>
-        html,body{
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
 
 </head>
 <body>
-    <div class="bg-white bg-cover min-h-screen">
-        <div class="md:container md:mx-auto px-2">
-            <x-navbar></x-navbar>
-        </div>
+
+    <x-cover>
+        <x-navbar></x-navbar>
+        {{ $slot }}
+    </x-cover>
 
 
-        
-        {{-- <div class="bg-green-600 rounded-3xl h-96 flex justify-center items-center gap-3">
-            <a href="#" class=" hover:scale-110 ease-in-out duration-300 shadow-lg">
-                <div class="card  bg-white shadow-xl">
-                    <div class="card-body text-center font-semibold">
-                       Al-Quran
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="hover:scale-110 ease-in-out duration-300 shadow-lg">
-                <div class="card  bg-white shadow-xl">
-                    <div class="card-body text-center font-semibold">
-                       Doa Harian
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="hover:scale-110 ease-in-out duration-300 shadow-lg">
-                <div class="card  bg-white shadow-xl">
-                    <div class="card-body text-center font-semibold">
-                       Kisah Nabi dan Rasul
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="hover:scale-110 ease-in-out duration-300 shadow-lg">
-                <div class="card  bg-white shadow-xl">
-                    <div class="card-body text-center font-semibold">
-                       Bacaan Shalat
-                    </div>
-                </div>
-            </a>
-        </div> --}}
-    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

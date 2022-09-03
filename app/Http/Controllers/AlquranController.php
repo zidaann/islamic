@@ -9,7 +9,7 @@ class AlquranController extends Controller
 {
     public function index(){
         $response = Http::get('https://equran.id/api/surat');
-        $data = $response->json();
-        return view('quran.index', compact('data'));
+        $datas = $response->json();
+        return view('quran.index', compact('datas'));
     }
 }
