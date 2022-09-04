@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'index');
+Route::view('/', 'index')->name('home');
 
 Route::get('alquran', [AlquranController::class, 'index'])->name('quran.index');
+Route::get('alquran/{nomor}', [AlquranController::class, 'show'])->name('quran.show');

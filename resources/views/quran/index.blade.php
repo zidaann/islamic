@@ -20,7 +20,7 @@
             </div>
             <div class="surah-body">
                 @foreach ($datas as $data)
-                    <a href="#">
+                    <a href="{{ route('quran.show', $data['nomor']) }}">
                         <div class="box-surah">
                             <div class="box-desc ">
                                 <div class="box-number">

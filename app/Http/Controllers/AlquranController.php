@@ -12,4 +12,11 @@ class AlquranController extends Controller
         $datas = $response->json();
         return view('quran.index', compact('datas'));
     }
+
+    public function show($nomor){
+        $response = Http::get('https://equran.id/api/surat/'.$nomor);
+        $datas = $response->json();
+        // dd($datas);
+        return view('quran.show', compact('datas'));
+    }
 }

@@ -1,3 +1,3 @@
-<div class="cover bg-white pb-5">
+<div class="cover pb-5">
 {{ $slot }}
 </div>
